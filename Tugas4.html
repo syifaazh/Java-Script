@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <!-- membut table -->
+    <table border="0" cellpadding="5" width="30%" align="center">
+        <form id = "kalkulator">
+            <tr>
+                <!-- penggunaan css inline -->
+                <td style="padding: 3%; font-size: 120%; font-family:Verdana; text-align: center; background-color: rgb(93, 151, 87) ;">
+                    Kalkulator
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="antiquewhite">Angka 1</td>
+            </tr>
+            <tr>
+                <td bgcolor="floralwhite"><input style="width: 95%; padding: 2%; font-size: 120%; font-family: Cambrias;" 
+                    type="number" name="angka" placeholder="masukkan angka pertama"></td>
+            </tr>
+            <tr>
+                <td bgcolor="antiquewhite">Angka 2</td>
+            </tr>
+            <tr>
+                <td bgcolor="floralwhite"><input style="width: 95%; padding: 2%; font-size: 120%; font-family: Cambrias;"
+                    type="number" name="angka2" placeholder="masukkan angka kedua"></td>
+            </tr>
+            <tr>
+                <td bgcolor="antiquewhite">Hasil</td>
+            </tr>
+            <tr>
+                <td bgcolor="floralwhite"><input style="width: 95%; padding: 2%; font-size: 120%; font-family: Cambria;"
+                    type="number" name="hasil" value="" disabled></td>
+            </tr>
+        </form>
+    </table><br>
+    <div align="center">
+        <button style="background-color: rgb(235, 238, 220); padding: 1%;" 
+            type="button" name="btn_tambah" onclick="tambah()">+</button>
+        <button style="background-color: rgb(235, 238, 220); padding: 1%;"
+            type="button" name="btn_tambah" onclick="kurang()">-</button>
+        <button style="background-color: rgb(235, 238, 220); padding: 1%;"
+            type="button" name="btn_tambah" onclick="bagi()">/</button>
+        <button style="background-color: rgb(235, 238, 220); padding: 1%;"
+            type="button" name="btn_tambah" onclick="kali()">*</button>
+        <button style="background-color: rgb(235, 238, 220); padding: 1%;"
+            type="button" name="btn_tambah" onclick="pangkat()">x²</button>
+    </div>
+
+    <script src="js/kalkulator.js">
+    </script>
+</body>
+</html>
