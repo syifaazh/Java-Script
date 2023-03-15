@@ -9,7 +9,7 @@ function tambah(){
     if(a1 && a2){
         frm.hasil.value = total;
     }else{
-        alert("LMaaf angka belum terisi");
+        alert("Maaf angka belum terisi");
         return false;
     }
 }
