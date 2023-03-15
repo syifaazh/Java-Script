@@ -1,0 +1,20 @@
+<marquee>
+    <h1>Belajar Dom dan Event handler</h1>
+</marquee>
+<form id="frm">
+    Nama : <input type="text" name="nama"/>
+    kelas : <input type="text" name="kelas"/>
+    <!-- penggunaan event hadler onclick  -->
+    <input type="button" name="proses" value="salam" onclick="salam()">
+</form>
+    <h3 id="hasil"></h3>
+<script>
+    function salam(){
+        let siswa = document.getElementById("frm").nama.value; //contoh pembuatan elemet value
+        let kelas = document.getElementById("frm").kelas.value;
+        let input = "Selamat pagi " + siswa + "<br>kelas : " + kelas;
+        let no_input = "Maaf nama anda belum terisi " + siswa ;
+        let hasil = (siswa || kelas != "")? input : no_input;
+        document.getElementById("hasil").innerHTML = hasil;
+    }
+</script>
